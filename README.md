@@ -15,6 +15,7 @@ One agentic backend, two audiences. A **Router Agent** analyzes the input and se
 
 - [Why agents](#why-agents)
 - [Architecture](#architecture)
+- [Screenshots & Examples](#screenshots--examples)
 - [Safety guarantees](#safety-guarantees)
 - [Tech stack](#tech-stack)
 - [Project structure](#project-structure)
@@ -69,7 +70,9 @@ User input (free text)
    JSON response (mode-adapted, in the user's language)
 ```
 
-See [`docs/architecture-diagram.png`](docs/architecture-diagram.png) for the full diagram.
+See the architecture diagram below:
+
+![TrustLens Architecture Diagram](docs/architecture-diagram.png)
 
 ### Agents
 
@@ -89,6 +92,26 @@ The trust score is **computed by code, never by the LLM**. The Scorer's LLM only
 - **Base** = (verified facts / total claims) × 100
 - **Adjustments**: +2 per high-confidence fact (max +10), −2 per low (max −10), −5 per contradiction (max −15), −3 per unsupported claim (max −15)
 - **Hard caps**: any unsupported claims → capped at 50; unsupported + contradictions → capped at 25; any refuted claims → capped at 15
+
+---
+
+## Screenshots & Examples
+
+### 🔍 Verification Dashboard
+The entry point of the TrustLens application, presenting a modern dashboard where users can submit raw articles, individual claims, URLs, or select one of the built-in analytical templates.
+
+![TrustLens Dashboard](HomePage.png)
+
+### ⚖️ Public Mode (Fact-Checking)
+When a factual claim is submitted (such as *"La Tour Eiffel mesure plus de 500 mètres"*), TrustLens analyzes it, cross-references sources via the Tavily MCP server, determines a verdict, and calculates a deterministic Trust Index score along with specific supporting evidence.
+
+![Public Mode Fact-Check Result](TourEiffel.png)
+### 📰 Newsroom Mode (Intelligence Briefing)
+For broader topics, monitoring queries, or news stories (such as *"c'est quand la dernière tremblement de terre est passé dans le monde"*), the system generates a structured, professional intelligence briefing with multi-source comparisons, an index of documents, and domain reliability coverage.
+
+![Newsroom Mode Intelligence Briefing](exp.png)
+
+---
 
 ## Safety guarantees
 
@@ -116,6 +139,9 @@ These are non-negotiable and enforced in code:
 ```
 TrustLens/
 ├── README.md
+├── HomePage.png                 # Verification dashboard screenshot
+├── TourEiffel.png               # Public mode full analysis screenshot
+├── exp.png                      # Newsroom mode intelligence briefing screenshot
 ├── .env.example                 # Env variables — NEVER commit real keys
 ├── backend/
 │   ├── agents/

@@ -1,0 +1,123 @@
+{
+  "facts": [
+    {
+      "claim": "The U.S. Justice Department is conducting ongoing elections investigations.",
+      "supported_by": [
+        "https://www.youtube.com/watch?v=yh2m3sc4doI",
+        "https://www.kcra.com/article/us-doj-continues-elections-investigation-fight-to-audit-californias-voter-rolls-ca-politics-360/71573105"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "First Assistant U.S. Attorney Bill Essayli stated his office found evidence of voter fraud in California and is investigating.",
+      "supported_by": [
+        "https://www.kcra.com/article/us-doj-continues-elections-investigation-fight-to-audit-californias-voter-rolls-ca-politics-360/71573105"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The FBI is investigating alleged voter fraud in Los Angeles, specifically in the skid row area.",
+      "supported_by": [
+        "https://katv.com/news/nation-world/fbi-heads-to-los-angeles-to-investigate-alleged-voter-fraud-skid-row-spencer-pratt-justice-department-election"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "There are proven instances of criminal voter fraud.",
+      "supported_by": [
+        "https://www.congress.gov/116/meeting/house/108824/documents/HHRG-116-JU00-20190129-SD020.pdf"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Preventing, deterring, and prosecuting fraud is essential for protecting the integrity of the voting process.",
+      "supported_by": [
+        "https://www.congress.gov/116/meeting/house/108824/documents/HHRG-116-JU00-20190129-SD020.pdf"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Electoral integrity is generally understood as elections based on democratic principles of universal suffrage and political equality, administered professionally, impartially, and transparently throughout the electoral cycle.",
+      "supported_by": [
+        "https://www.idea.int/gsod/2024/chapters/disputed-elections",
+        "https://aceproject.org/ace-en/topics/ei/explore_topic_new"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Constant vigilance is necessary to protect election integrity from threats like old-fashioned fraud, media manipulation, and regulatory obstacles.",
+      "supported_by": [
+        "https://freedomhouse.org/issues/election-integrity"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Freedom House is piloting \"Election Watch for the Digital Age\" to investigate the interplay between digital platforms and election integrity.",
+      "supported_by": [
+        "https://freedomhouse.org/issues/election-integrity"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Without electoral integrity, public confidence in election results is weak, and the government may lack legitimacy.",
+      "supported_by": [
+        "https://aceproject.org/ace-en/topics/ei/explore_topic_new"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Misinformation, including false claims about rigged voting machines and voter fraud, poses a major threat to election security.",
+      "supported_by": [
+        "https://www.pbs.org/newshour/show/new-report-shows-misinformation-a-major-threat-to-election-security"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "False claims of fraud are motivating attempts to interfere with the independent counting and certification of election results.",
+      "supported_by": [
+        "https://www.brennancenter.org/topics/voting-elections/election-integrity"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The 2020 U.S. presidential election was described as \"the most secure election in American history.\"",
+      "supported_by": [
+        "https://www.brennancenter.org/topics/voting-elections/election-integrity"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lawsuits concerning the 2020 elections found that plaintiff's evidence failed to show fraud or misconduct, with the vote duplication process showing 99.45% accuracy.",
+      "supported_by": [
+        "https://campaignlegal.org/results-lawsuits-regarding-2020-elections"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "There is no evidence for systematic voter fraud.",
+      "supported_by": [
+        "https://www.pnas.org/doi/10.1073/pnas.2103619118"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Donald Trump refused to concede the 2020 US presidential election, alleging widespread and unparalleled voter fraud.",
+      "supported_by": [
+        "https://www.pnas.org/doi/10.1073/pnas.2103619118",
+        "https://www.theguardian.com/us-news/2026/jun/16/trump-voting-rights-elections"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "opinions": [],
+  "unsupported_claims": [],
+  "contradictions": [
+    {
+      "point": "The existence and nature of voter fraud.",
+      "source_a": "https://www.kcra.com/article/us-doj-continues-elections-investigation-fight-to-audit-californias-voter-rolls-ca-politics-360/71573105",
+      "position_a": "First Assistant U.S. Attorney Bill Essayli stated there is evidence of voter fraud as his office continues its investigation into the state's (California).",
+      "source_b": "https://www.pnas.org/doi/10.1073/pnas.2103619118",
+      "position_b": "There is no evidence for systematic voter fraud, despite allegations of widespread and unparalleled voter fraud after the 2020 US presidential election."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "facts": [
+    {
+      "claim": "Health officials emphasize the importance of strengthened One Health surveillance and control measures due to the sustained circulation of avian influenza viruses in poultry and wild birds.",
+      "supported_by": [
+        "https://link.springer.com/article/10.1007/s15010-025-02681-y"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "The World Health Organization (WHO) monitors avian influenza situations and receives notifications from national authorities regarding human infections with novel influenza A virus subtypes.",
+      "supported_by": [
+        "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON575",
+        "https://www.who.int/teams/global-influenza-programme/avian-influenza/avian-a-h5n1-virus"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "There is no evidence of sustained human-to-human transmission of avian influenza A(H5N1); human infections are typically occasional, following exposure to infected animals or contaminated environments.",
+      "supported_by": [
+        "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON575",
+        "https://link.springer.com/article/10.1007/s15010-025-02681-y"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "opinions": [],
+  "unsupported_claims": [
+    "Breaking news from the Associated Press",
+    "The World Health Organization announced today that a new variant of the H5N1 avian influenza virus has been detected in three countries across Southeast Asia.",
+    "According to Dr. Maria Van Kerkhove, the WHO technical lead on influenza",
+    "while the risk to the general public remains low",
+    "we are closely monitoring the situation and working with national authorities to ensure rapid containment.",
+    "The variant, tentatively named clade 2.3.4.4b.1, shows mutations in the hemagglutinin protein that may affect transmissibility between birds"
+  ],
+  "contradictions": []
+}

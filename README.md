@@ -138,7 +138,7 @@ TrustLens/
 │   └── package.json
 └── docs/
     ├── architecture-diagram.png
-    └── demo-script.md
+    └── kaggle-writeup.md
 ```
 
 ## Setup

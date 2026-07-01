@@ -41,12 +41,22 @@ PIPELINE_TIMEOUT_SECONDS = 120
 # CORS origins allowed for local frontend development.
 # For production, restrict this to the actual frontend domain.
 # See README for production CORS configuration.
+import os
+
 CORS_ORIGINS = [
     "http://localhost:3000",      # Next.js default dev port
     "http://localhost:3001",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:3001",
 ]
+
+# Allow overriding or extending CORS origins via environment variable in production
+env_cors = os.environ.get("CORS_ORIGINS")
+if env_cors:
+    if env_cors.strip() == "*":
+        CORS_ORIGINS = ["*"]
+    else:
+        CORS_ORIGINS.extend([origin.strip() for origin in env_cors.split(",") if origin.strip()])
 
 # ---------------------------------------------------------------------------
 # App

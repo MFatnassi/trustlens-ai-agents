@@ -336,6 +336,14 @@ Planned extensions, **not** in scope for the current capstone submission:
 - **Deepfake / AI-generation detection** — specialized detection models.
 - **Batch analysis** — submit multiple articles or RSS feeds for continuous newsroom monitoring.
 
+## License
+
+Copyright © 2026 Marwen Fatnassi.
+
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** — see the [LICENSE](LICENSE) file for the full text.
+
+In short: you are free to use, study, and modify this software, but any distribution or network/SaaS use of a modified version **must make the complete corresponding source code available under the same license**. See <https://www.gnu.org/licenses/agpl-3.0.html> for details.
+
 ---
 
 *Built for the Google × Kaggle "AI Agents: Intensive Vibe Coding" Capstone — track Agents for Good.*

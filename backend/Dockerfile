@@ -9,6 +9,18 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Set working directory
 WORKDIR /app
 
+# Install Node.js (provides `npx`, required to spawn the Tavily MCP server).
+# The Python MCP client launches `npx -y tavily-mcp@latest` as a stdio subprocess,
+# so Node must be present in the image or the subprocess spawn fails with
+# FileNotFoundError: 'npx'.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl ca-certificates \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
+    && npm install -g tavily-mcp@latest \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # Copy requirements first to leverage build cache
 COPY requirements.txt .
 
